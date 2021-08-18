@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Simulator</title>
+</head>
+<body>
+    <div style="position: absolute; left: 15%; margin-left: 300px; width: 550px; height:auto; ">
+         <a href="/" >
+      <button style="margin:20px 20px;">Home </button>
+      </a>
+     <h1 style="text-align:center">Poll Simulator</h1> 
+      <h2 style="text-align: center;">Voting Report:</h2>
+      <center>
+     {{#each cans}}
+       <p>{{this.name}}:   {{this.votes}}</p>
+     {{/each}}
+     </center>
+     </div>
+</body>
+</html>
